@@ -13,9 +13,6 @@ namespace ApplicationDataLibrary
             return x.FirstName == y.FirstName;
         }
 
-        public int GetHashCode(Person obj)
-        {
-            return (obj.FirstName != null ? obj.FirstName.GetHashCode() : 0);
-        }
+        public int GetHashCode(Person person) => (person.FirstName != null ? person.FirstName.GetHashCode() : 0);
     }
 }

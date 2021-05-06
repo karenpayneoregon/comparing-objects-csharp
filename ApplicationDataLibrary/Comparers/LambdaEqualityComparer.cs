@@ -14,14 +14,8 @@ namespace ApplicationDataLibrary
             _hashCodeFunction = hashCodeFunction ?? throw new ArgumentNullException();
         }
 
-        public bool Equals(T x, T y)
-        {
-            return _equalsFunction(x, y);
-        }
+        public bool Equals(T x, T y) => _equalsFunction(x, y);
 
-        public int GetHashCode(T obj)
-        {
-            return _hashCodeFunction(obj);
-        }
+        public int GetHashCode(T obj) => _hashCodeFunction(obj);
     }
 }

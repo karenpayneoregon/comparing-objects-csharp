@@ -22,14 +22,20 @@ namespace ComparingObjectsUnitTest
             TestResults = new List<TestContext>();
         }
 
+        /// <summary>
+        /// Read people from file
+        /// </summary>
         public static List<Person> ReadPeopleFromFile => PersonOperations.Read("Data\\people.json");
+        
+        /// <summary>
+        /// People list which are manipulated in test methods
+        /// </summary>
         public static List<Person> TwoPersons => 
             new()
             {
                 new() { FirstName = "Karen", LastName = "Payne" }, 
                 new() { FirstName = "Karen", LastName = "Payne" }
             };
-
 
     }
 

@@ -12,6 +12,9 @@ namespace ComparingObjectsUnitTest
     [TestClass]
     public partial class MainTest : TestBase
     {
+        /// <summary>
+        /// TODO
+        /// </summary>
         [TestMethod]
         [TestTraits(Trait.ReadPerson)]
         public void Validate_Read_PeopleFromFile()
@@ -54,6 +57,10 @@ namespace ComparingObjectsUnitTest
 
             
         }
+
+        /// <summary>
+        /// TODO
+        /// </summary>
         [TestMethod]
         [TestTraits(Trait.GenericWrappers)]
         public void FirstName_Generic_Comparer()
@@ -70,6 +77,9 @@ namespace ComparingObjectsUnitTest
 
         }
 
+        /// <summary>
+        /// TODO
+        /// </summary>
         [TestMethod]
         [TestTraits(Trait.GenericWrappers)]
         public void LambdaEquals()

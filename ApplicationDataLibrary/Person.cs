@@ -10,6 +10,8 @@ namespace ApplicationDataLibrary
         public string BirthDate { get; set; }
         public string Email { get; set; }
         public int CarId { get; set; }
+        public override string ToString() => $"{FirstName} {LastName}";
+
     }
 }
 

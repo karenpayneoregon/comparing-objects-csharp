@@ -18,10 +18,7 @@ namespace ApplicationDataLibrary
             return x.FirstName == y.FirstName && x.LastName == y.LastName;
         }
 
-        public int GetHashCode(Person obj)
-        {
-            return HashCode.Combine(obj.FirstName, obj.LastName);
-        }
+        public int GetHashCode(Person person) => HashCode.Combine(person.FirstName, person.LastName);
     }
 
 }
