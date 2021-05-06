@@ -2,7 +2,7 @@
 
 Provides various examples for comparing objects. 
 
-:white_circle:  Code will be added over time.
+:heavy_check_mark:  Code will be added over time.
 
 ![img](assets/unitTesting.png) ![img](assets/csharpSmall.png)
 
