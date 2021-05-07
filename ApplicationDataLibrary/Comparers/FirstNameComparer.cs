@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace ApplicationDataLibrary
+namespace ApplicationDataLibrary.Comparers
 {
     public class FirstNameComparer : IEqualityComparer<Person>
     {

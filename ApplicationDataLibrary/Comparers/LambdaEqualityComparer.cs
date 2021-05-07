@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ApplicationDataLibrary
+namespace ApplicationDataLibrary.Comparers
 {
     public class LambdaEqualityComparer<T> : IEqualityComparer<T>
     {

@@ -1,8 +1,15 @@
 ﻿using System.Collections.Generic;
 using System.Reflection;
 
-namespace ApplicationDataLibrary
+namespace ApplicationDataLibrary.Comparers
 {
+    /// <summary>
+    /// Comparer for generic type, using a property name as string.
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <remarks>
+    /// Generic comparer such as this is brittle when property name changes in a model and not changed passing to this comparer.
+    /// </remarks>
     public class PropertyComparer<T> : IEqualityComparer<T>
     {
         private readonly PropertyInfo propertyToCompare;
