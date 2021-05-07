@@ -13,7 +13,9 @@ namespace ComparingObjectsUnitTest.Base
         PlaceHolder,
         ReadPerson,
         Distinct,
-        GenericWrappers
+        GenericWrappers,
+        Grouping,
+        SequenceEqual
     }
     /// <summary>
     /// Declarative class for using Trait enum about for traits on test method.

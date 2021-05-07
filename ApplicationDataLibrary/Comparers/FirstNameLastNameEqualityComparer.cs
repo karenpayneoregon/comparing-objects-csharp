@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,5 +19,4 @@ namespace ApplicationDataLibrary
 
         public int GetHashCode(Person person) => HashCode.Combine(person.FirstName, person.LastName);
     }
-
 }

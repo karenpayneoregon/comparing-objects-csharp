@@ -21,5 +21,7 @@ namespace ApplicationDataLibrary.ComparerHelpers
         public static LambdaEqualityComparer<Person> LastNameLambda => 
             new((p1, p2) => 
             p1.LastName == p2.LastName, x => x.LastName.GetHashCode());
+
+
     }
 }
