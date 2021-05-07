@@ -3,6 +3,11 @@ using System.Collections.Generic;
 
 namespace ApplicationDataLibrary.Comparers
 {
+    /// <summary>
+    /// TODO documentation needed for Equality<T>
+    /// 
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public static class Equality<T>
     {
         public static IEqualityComparer<T> CreateComparer<V>(Func<T, V> keySelector)
@@ -22,6 +27,7 @@ namespace ApplicationDataLibrary.Comparers
 
             public KeyEqualityComparer(Func<T, V> keySelector, IEqualityComparer<V> comparer)
             {
+                // REVIEW null assertion
                 if (keySelector is null)
                 {
                     throw new ArgumentNullException("keySelector");

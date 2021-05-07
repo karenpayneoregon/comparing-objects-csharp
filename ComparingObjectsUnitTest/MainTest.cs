@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices;
 using ApplicationDataLibrary;
@@ -16,7 +17,7 @@ namespace ComparingObjectsUnitTest
     public partial class MainTest : TestBase
     {
         /// <summary>
-        /// TODO
+        /// TODO add description to Validate_Read_PeopleFromFile
         /// </summary>
         [TestMethod]
         [TestTraits(Trait.ReadPerson)]
@@ -101,7 +102,7 @@ namespace ComparingObjectsUnitTest
             }
         }
         /// <summary>
-        /// TODO
+        /// TODO add description for FirstName_Generic_Comparer
         /// </summary>
         [TestMethod]
         [TestTraits(Trait.GenericWrappers)]
@@ -120,7 +121,7 @@ namespace ComparingObjectsUnitTest
         }
 
         /// <summary>
-        /// TODO
+        /// TODO add description for LambdaEquals
         /// </summary>
         [TestMethod]
         [TestTraits(Trait.GenericWrappers)]
@@ -134,6 +135,30 @@ namespace ComparingObjectsUnitTest
             Assert.IsFalse(Wrappers.FirstNameLambda.Equals(people[0], people[1]));
 
         }
+        /// <summary>
+        /// Test override of equals operator for
+        /// Id, First and Last name case insensitive
+        /// </summary>
+        [TestMethod]
+        [TestTraits(Trait.ObjectEqualsOverride)]
+        public void Tester()
+        {
+
+            var people = TwoPersons;
+            
+            people[0].Id = 1;
+            people[1].Id = 1;
+            Assert.IsTrue(people[0] == people[1]);
+
+            people[0].Id = 2;
+            Assert.IsTrue(people[0] != people[1]);
+
+            people[0].Id = 1;
+            people[0].FirstName = people[0].FirstName.ToLower();
+            Assert.IsTrue(people[0] == people[1]);
+
+        }
+
 
     }
 }
