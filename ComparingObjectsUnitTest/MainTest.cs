@@ -94,7 +94,7 @@ namespace ComparingObjectsUnitTest
 
             foreach (IGrouping<int, Concert> concertGroup in concertGroups)
             {
-                Debug.WriteLine($"Concerts of person id {(comparer.IsInLimit(concertGroup.Key) ? "under 3" : "over 3")} : ");
+                Debug.WriteLine($"Concerts of person id {(comparer.IsInLimit(concertGroup.Key) ? "under 3" : "3 and over")} : ");
                 foreach (Concert concert in concertGroup)
                 {
                     Debug.WriteLine($"Number of concerts: {concert.ConcertCount}, in the year of {concert.Year} by singer {concert.PersonId}.");
