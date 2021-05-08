@@ -1,9 +1,10 @@
 ﻿using System;
+using ApplicationDataLibrary.ExtensionMethods;
 
 
 namespace ApplicationDataLibrary
 {
-    public partial class Person : IEquatable<Person>
+    public partial class Person
     {
         public int Id { get; set; }
         public string FirstName { get; set; }
@@ -12,7 +13,6 @@ namespace ApplicationDataLibrary
         public string Email { get; set; }
         public int CarId { get; set; }
         public override string ToString() => $"{FirstName} {LastName}";
-
     }
 
 }

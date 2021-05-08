@@ -141,7 +141,7 @@ namespace ComparingObjectsUnitTest
         /// </summary>
         [TestMethod]
         [TestTraits(Trait.ObjectEqualsOverride)]
-        public void Tester()
+        public void IEquatable_Person()
         {
 
             var people = TwoPersons;

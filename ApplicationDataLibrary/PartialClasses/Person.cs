@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using ApplicationDataLibrary.ExtensionMethods;
 
+// ReSharper disable once CheckNamespace
 namespace ApplicationDataLibrary
 {
-    public partial class Person
+    public partial class Person : IEquatable<Person>
     {
         public override bool Equals(object sender)
         {
@@ -49,14 +50,14 @@ namespace ApplicationDataLibrary
                 return true;
             }
 
-            if ((object) person1 == null || (object) person2 == null)
+            if ((object)person1 == null || (object)person2 == null)
             {
                 return false;
             }
 
 
-            return person1.Id == person2.Id && 
-                   person1.FirstName.AreEqual(person2.FirstName) && 
+            return person1.Id == person2.Id &&
+                   person1.FirstName.AreEqual(person2.FirstName) &&
                    person1.LastName.AreEqual(person2.LastName);
         }
 

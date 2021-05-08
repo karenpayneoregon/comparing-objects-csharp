@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using ApplicationDataLibrary;
 
 
+
 // ReSharper disable once CheckNamespace - do not change
 namespace ComparingObjectsUnitTest
 {
