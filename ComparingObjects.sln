@@ -11,15 +11,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit test projects", "Unit 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ComparingObjectsUnitTest", "ComparingObjectsUnitTest\ComparingObjectsUnitTest.csproj", "{A22CE149-C423-4604-A375-20C9F150892B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationDataLibrary", "ApplicationDataLibrary\ApplicationDataLibrary.csproj", "{2B17BA84-B62B-46F9-B27B-D9E940FFBDCA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationDataLibrary", "ApplicationDataLibrary\ApplicationDataLibrary.csproj", "{2B17BA84-B62B-46F9-B27B-D9E940FFBDCA}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{F21C1695-2B66-43EC-AED7-5405CF8C8C1D}"
 	ProjectSection(SolutionItems) = preProject
 		Information.txt = Information.txt
+		orders.txt = orders.txt
 		readme.md = readme.md
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nfluentTests", "nfluentTests\nfluentTests.csproj", "{F2166A5B-03B4-4A5A-9CF6-56FC3B5B75CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "nfluentTests", "nfluentTests\nfluentTests.csproj", "{F2166A5B-03B4-4A5A-9CF6-56FC3B5B75CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

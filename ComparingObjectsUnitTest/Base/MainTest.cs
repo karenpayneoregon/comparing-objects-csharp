@@ -28,7 +28,10 @@ namespace ComparingObjectsUnitTest
         /// Read people from file
         /// </summary>
         public static List<Person> ReadPeopleFromFile => PersonOperations.Read("Data\\people.json");
-        
+
+        public static List<Orders> ReadOrdersFromFile => OrderOperations.Read("Data\\Orders.txt");
+
+
         /// <summary>
         /// People list which are manipulated in test methods
         /// </summary>

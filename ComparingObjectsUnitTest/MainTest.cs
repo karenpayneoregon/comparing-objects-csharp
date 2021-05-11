@@ -16,11 +16,28 @@ namespace ComparingObjectsUnitTest
     [TestClass]
     public partial class MainTest : TestBase
     {
+        [TestMethod]
+        [TestTraits(Trait.ReadFile)]
+        public void ReadOrders()
+        {
+            var orders = ReadOrdersFromFile;
+
+            Assert.AreEqual(orders.Count,54);
+
+        }
+
+        [TestMethod]
+        public void OrderDates()
+        {
+            
+        }
+
+
         /// <summary>
         /// TODO add description to Validate_Read_PeopleFromFile
         /// </summary>
         [TestMethod]
-        [TestTraits(Trait.ReadPerson)]
+        [TestTraits(Trait.ReadFile)]
         public void Validate_Read_PeopleFromFile()
         {
             var people = ReadPeopleFromFile;

@@ -16,7 +16,8 @@ namespace ComparingObjectsUnitTest.Base
         GenericWrappers,
         Grouping,
         SequenceEqual,
-        ObjectEqualsOverride
+        ObjectEqualsOverride,
+        ReadFile
     }
     /// <summary>
     /// Declarative class for using Trait enum about for traits on test method.

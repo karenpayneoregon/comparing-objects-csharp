@@ -18,6 +18,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Update="Data\Orders.txt">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
 	  <None Update="Data\people.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
