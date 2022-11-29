@@ -7,7 +7,7 @@ Provides various examples for comparing objects.
 ![img](assets/unitTesting.png) ![img](assets/csharpSmall.png)
 
 
-:heavy_check_mark: 11/30/2022 Updated to .NET Core 7
+:heavy_check_mark: 11/30/2022 Updated to .NET Core 7 from .NET Core 5 which is out of support.
 
 
 ---
