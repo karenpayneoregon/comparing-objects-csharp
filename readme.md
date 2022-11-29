@@ -1,6 +1,6 @@
 # About
 
-Provides various examples for comparing objects. 
+Provides various examples for comparing objects. Most examples on the web usually deal with simple list of string or int while code samples here show how to work with `List<T>`. Keep in mind that the examples are a starting point to learn from as it is not possible to cover all situations.
 
 :heavy_check_mark:  Code will be added over time.
 
