@@ -6,7 +6,9 @@ Provides various examples for comparing objects.
 
 ![img](assets/unitTesting.png) ![img](assets/csharpSmall.png)
 
-![img](assets/Versions.png)
+
+:heavy_check_mark: 11/30/2022 Updated to .NET Core 7
+
 
 ---
 
@@ -18,7 +20,7 @@ Provides various examples for comparing objects.
 
 
 
-### Sample
+## Sample
 
 ```csharp
 [TestMethod]
