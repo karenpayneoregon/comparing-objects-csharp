@@ -13,9 +13,7 @@ namespace ApplicationDataLibrary
         public int ConcertCount { get; set; }
         public int Year { get; set; }
 
-        public override string ToString()
-        {
-            return $"{nameof(PersonId)}: {PersonId}, {nameof(ConcertCount)}: {ConcertCount}";
-        }
+        public override string ToString() 
+            => $"{nameof(PersonId)}: {PersonId}, {nameof(ConcertCount)}: {ConcertCount}";
     }
 }

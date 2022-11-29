@@ -85,8 +85,8 @@ namespace ComparingObjectsUnitTest
         [TestTraits(Trait.SequenceEqual)]
         public void Sequence_Equals()
         {
-            var people1 = FivePeople.ToArray();
-            var people2 = FivePeople.ToArray();
+            Person[] people1 = FivePeople.ToArray();
+            Person[] people2 = FivePeople.ToArray();
 
             var results = people1.SequenceEqual(people2, new FirstNameLastNameEqualityComparer());
             Assert.IsTrue(results);

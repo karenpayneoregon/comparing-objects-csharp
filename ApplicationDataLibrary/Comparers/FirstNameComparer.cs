@@ -4,13 +4,13 @@ namespace ApplicationDataLibrary.Comparers
 {
     public class FirstNameComparer : IEqualityComparer<Person>
     {
-        public bool Equals(Person x, Person y)
+        public bool Equals(Person person1, Person person)
         {
-            if (ReferenceEquals(x, y)) return true;
-            if (ReferenceEquals(x, null)) return false;
-            if (ReferenceEquals(y, null)) return false;
-            if (x.GetType() != y.GetType()) return false;
-            return x.FirstName == y.FirstName;
+            if (ReferenceEquals(person1, person)) return true;
+            if (ReferenceEquals(person1, null)) return false;
+            if (ReferenceEquals(person, null)) return false;
+            if (person1.GetType() != person.GetType()) return false;
+            return person1.FirstName == person.FirstName;
         }
 
         public int GetHashCode(Person person) => (person.FirstName != null ? person.FirstName.GetHashCode() : 0);

@@ -16,8 +16,9 @@ namespace ApplicationDataLibrary.ExtensionMethods
         /// <param name="comparer"><see cref="PersonIdentifierGroupComparer"/></param>
         /// <returns>IEnumerable&lt;IGrouping&lt;int, Concert&gt;&gt;</returns>
         public static IEnumerable<IGrouping<int, Concert>> 
-            ConcertGroup(this IEnumerable<Concert> sender, PersonIdentifierGroupComparer comparer) => 
-            sender.GroupBy(c => c.PersonId, comparer);
+            ConcertGroup(this IEnumerable<Concert> sender, PersonIdentifierGroupComparer comparer) 
+                => sender.GroupBy(convert 
+                    => convert.PersonId, comparer);
         
     }
 }

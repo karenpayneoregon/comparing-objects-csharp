@@ -5,14 +5,14 @@ namespace ApplicationDataLibrary.Comparers
 {
     public class FirstNameLastNameEqualityComparer : IEqualityComparer<Person>
     {
-        public bool Equals(Person x, Person y)
+        public bool Equals(Person person1, Person person)
         {
-            if (ReferenceEquals(x, y)) return true;
-            if (ReferenceEquals(x, null)) return false;
-            if (ReferenceEquals(y, null)) return false;
-            if (x.GetType() != y.GetType()) return false;
+            if (ReferenceEquals(person1, person)) return true;
+            if (ReferenceEquals(person1, null)) return false;
+            if (ReferenceEquals(person, null)) return false;
+            if (person1.GetType() != person.GetType()) return false;
             
-            return x.FirstName == y.FirstName && x.LastName == y.LastName;
+            return person1.FirstName == person.FirstName && person1.LastName == person.LastName;
         }
 
         public int GetHashCode(Person person) => HashCode.Combine(person.FirstName, person.LastName);
