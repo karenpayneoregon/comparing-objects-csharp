@@ -1,9 +1,11 @@
 ﻿namespace CompareNetObjectsApp.Classes;
 
+/// <summary>
+/// Compare on Id property
+/// </summary>
 public class IdComparer : IEqualityComparer<Person>
 {
     public int GetHashCode(Person person) => person.Id.GetHashCode();
-
 
     public bool Equals(Person person1, Person person)
     {
