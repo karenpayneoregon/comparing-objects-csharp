@@ -1,23 +1,19 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
-namespace ComparingObjectsUnitTest.Base
+namespace ComparingObjectsUnitTest.Base;
+
+public class TestBase
 {
-    public class TestBase
+    protected TestContext TestContextInstance;
+    public TestContext TestContext
     {
-        protected TestContext TestContextInstance;
-        public TestContext TestContext
+        get => TestContextInstance;
+        set
         {
-            get => TestContextInstance;
-            set
-            {
-                TestContextInstance = value;
-                TestResults.Add(TestContext);
-            }
+            TestContextInstance = value;
+            TestResults.Add(TestContext);
         }
-
-        public static IList<TestContext> TestResults;
     }
+
+    public static IList<TestContext> TestResults;
 }
